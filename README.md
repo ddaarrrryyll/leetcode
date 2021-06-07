@@ -1,9 +1,10 @@
-# leetcode
-trying my best :(
+# LEETCODE
+Collection of solved leetcode problems
+Trying my best :(
 
-updated automatically using QasimWani's LeetHub (link: https://github.com/QasimWani/LeetHub) Google chrome extension
+Updated automatically using QasimWani's LeetHub (link: https://github.com/QasimWani/LeetHub) Google chrome extension
 
-unable to upload:
+# Unable to upload:
 
 \#1426 Counting Elements
 
