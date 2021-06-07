@@ -1,12 +1,12 @@
 # LEETCODE
-Collection of solved leetcode problems
+Collection of solved leetcode problems updated automatically using QasimWani's LeetHub (link: https://github.com/QasimWani/LeetHub) Google chrome extension
 
 Trying my best :(
 
-Updated automatically using QasimWani's LeetHub (link: https://github.com/QasimWani/LeetHub) Google chrome extension
 
-### Unable to upload:
 
-\#1426 Counting Elements
+## Unable to upload:
 
-\#1427 Perform String Shifts
+\#1426 Counting Elements (not subscriber)
+
+\#1427 Perform String Shifts (not subscriber)
