@@ -1,5 +1,5 @@
 # LEETCODE
-Collection of solved leetcode problems updated automatically using QasimWani's LeetHub (link: https://github.com/QasimWani/LeetHub) Google chrome extension
+Collection of attempted leetcode problems updated automatically using QasimWani's LeetHub (link: https://github.com/QasimWani/LeetHub) Google chrome extension
 
 Trying my best :(
 
