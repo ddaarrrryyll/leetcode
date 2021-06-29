@@ -18,7 +18,7 @@ int longestOnes(int* nums, int numsSize, int k){
         }
         i++;
         // i and j is moved together if k < 0 to keep the biggest i - j  value
-        printf("i = %d, j = %d, k = %d\n", i, j, k);
+        // printf("i = %d, j = %d, k = %d\n", i, j, k);
     }
     return i - j;
 }
