@@ -2,17 +2,15 @@
 from collections import defaultdict
 class Solution:
     def minSetSize(self, arr: List[int]) -> int:
-        sol = 0
-        size = len(arr)
-        d = defaultdict(lambda: 0)
-        for x in arr:
-            d[x] += 1
-        e = dict(sorted(d.items(), key = lambda item: item[1], reverse = True))
-        # print(e)
-        for key, val in e.items():
-            if size > len(arr)/2:
-                size -= val
+        # gives the frequency of each element
+        w = sorted(list(Counter(arr).values()), reverse = True)
+        sol, half = 0, 0
+        for i in w:
+            if half < len(arr)//2:
+                half += i
                 sol += 1
             else:
                 break
         return sol
+    
+        
