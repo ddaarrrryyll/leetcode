@@ -1,3 +1,5 @@
+# using an altered form of sliding window, we try to find the first occurence of a repeated element, once we found the repeating element, we can increase the size of our window and 
+# start from the index of the first occurence
 class Solution:
     def findLength(self, nums1: List[int], nums2: List[int]) -> int:
         sol = 0
