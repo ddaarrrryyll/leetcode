@@ -1,4 +1,4 @@
-<h2>929. Unique Email Addresses</h2><h3>Easy</h3>
+<h2>929. Unique Email Addresses</h2><h3>Easy</h3><hr>
 <div><p>Every <strong>valid email</strong> consists of a <strong>local name</strong> and a <strong>domain name</strong>, separated by the <code>'@'</code> sign. Besides lowercase letters, the email may contain one or more <code>'.'</code> or <code>'+'</code>.</p>
 
 <ul>
