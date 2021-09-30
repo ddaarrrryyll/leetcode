@@ -11,6 +11,9 @@ class Solution {
     public boolean canPartition(int start, int[] nums, boolean[] used, int k, int currSum, int targetSum) {
         // if one more bucket left means partitioning succeeded
         if (k==1) return true;
+        // second base case
+        if (currSum > targetSum) return false;
+        
         // finished one bucket
         if (currSum == targetSum) return canPartition(0, nums, used, k-1, 0, targetSum);
         for (int i = start; i < nums.length; i++) {
