@@ -10,15 +10,11 @@ class UnionFind:
             
         return self.parent[x]
     
-    def union(self, x : int, y : int) -> bool:
+    def union(self, x : int, y : int):
         parent_x = self.find(x)
         parent_y = self.find(y)
-        # if both share the same parent, no need to union
-        if parent_x == parent_y:
-            return False
-        # union if both don't share the same parent
+        # union both
         self.parent[parent_x] = parent_y
-        return True
         
 
 class Solution:
