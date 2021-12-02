@@ -14,6 +14,7 @@ struct ListNode* oddEvenList(struct ListNode* head){
         len ++;
         temp = temp->next;
     }
+    // if len = 0,1,2, no need to rearrange
     if (len < 3) return head;
     // 1, 2, 3, 4 ,5
     // 1
@@ -22,7 +23,6 @@ struct ListNode* oddEvenList(struct ListNode* head){
     struct ListNode *even = odd->next;
 
     // 3
-    
     struct ListNode *aft_even = even->next;
     struct ListNode *aft_odd;
     
