@@ -1,6 +1,5 @@
 class Solution:
     def firstUniqChar(self, s: str) -> int:
-        # the fastest way should be checking bruteforcely and marking if an index has been matched
         matched = [0] * len(s)
         for i in range(len(s)):
             # skip if has been matched 
