@@ -1,20 +1,23 @@
 class Solution:
     def splitArray(self, nums: List[int], k: int) -> int:
-        if k == 1: return sum(nums)
         if k == len(nums): return max(nums)
+        if k == 1: return sum(nums)
+        
+        # largest min sum is between max(nums) and sum(nums), we can do bin search
         lower, upper = max(nums), sum(nums)
         while lower < upper:
-            # the amount we want is between max(nums) and sum(nums)
             mid = (lower + upper) // 2
-            total, arrs = 0, 1
+            subarr_sum, subarr_count = 0, 1
+            # if we find a way to partition nums into subarr_sum <= mid, we try to find a smaller mid, otherwise mid is too small and we need to increase
             for num in nums:
-                if total + num <= mid:
-                    total += num
+                if subarr_sum + num <= mid:
+                    subarr_sum += num
                 else:
-                    total = num
-                    arrs += 1
-            # split too much, means mid is too small
-            if arrs > k:
+                    subarr_sum = num
+                    subarr_count += 1
+                    
+            # if we have more subarrays than k, then mid is too small
+            if subarr_count > k:
                 lower = mid + 1
             else:
                 upper = mid
